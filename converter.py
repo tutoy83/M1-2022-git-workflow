@@ -32,3 +32,4 @@ def inputs_is_bits(bits_array):
     for b in bits_array:
         if b not in [0, 1]:
             return False
+    return True
