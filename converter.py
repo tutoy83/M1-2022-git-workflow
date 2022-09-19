@@ -20,9 +20,15 @@ def bin_to_dec(bits_array: List[int]) -> int:
     :param bits_array: list of 0s and 1s to convert
     :return: int
     """
-    for b in bits_array:
-        if b not in [0, 1]:
-            raise ValueError("input should contain only bits (0 or 1)")
+    if not inputs_is_bits(bits_array):
+        raise ValueError("input should contain only bits (0 or 1)")
+
     ba = bits_array.copy()
     ba.reverse()
     return sum([1 << i * m for i, m in enumerate(ba)])
+
+
+def inputs_is_bits(bits_array):
+    for b in bits_array:
+        if b not in [0, 1]:
+            return False
