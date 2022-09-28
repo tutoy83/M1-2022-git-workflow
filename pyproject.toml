@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oper_py_tutoy83"
+version = "0.0.1"
+authors = [
+  { name="tutoy83", email="theo.mignotte@isen.yncrea.fr" },
+]
+description = "Convertisseur de donnees en python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rgt-yncrea/M1-2022-git-workflow"
+"Bug Tracker" = "https://github.com/rgt-yncrea/M1-2022-git-workflow/issues"
